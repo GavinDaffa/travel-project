@@ -22,11 +22,11 @@ session_start();
 			<a class="nav-link" href="<?= BASE_URL . '/home/harga.php' ?>">Harga</a>
 			<a class="nav-link" href="<?= BASE_URL . '/home/contact.php' ?>">Contact</a>
 			<?php
-			print_r($_SESSION);
-			if ($_SESSION['username']) {
+			if (!empty($_SESSION['username'])) {
 				echo '<a class="nav-link" href="'.BASE_URL.'/connect/logout.php"><h5><span class="badge bg-success pt-2 pb-2 px-4">Logout</span></h5></a>';
 			}else{
 				echo '<a class="nav-link" href="'.BASE_URL.'/authuser/"><h5><span class="badge bg-success pt-2 pb-2 px-4">Login</span></h5></a>';
+				echo '<a class="nav-link" href="'.BASE_URL.'/authuser/register.php"><h5><span class="badge bg-primary pt-2 pb-2 px-4">Register</span></h5></a>';
 			}
 			?>
 		  </div>

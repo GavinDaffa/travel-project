@@ -17,6 +17,7 @@ if (empty($_SESSION['username'])) {
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><a class="nav-link" href="<?= BASE_ADMIN . '/ruteindex.php' ?>">Rute</a></li>
                     <li class="list-group-item active"><a class="nav-link" href="<?= BASE_ADMIN . '/transindex.php' ?>">Transaksi</a></li>
+                    <li class="list-group-item"><a class="nav-link" href="<?= BASE_ADMIN . '/tambahadmin.php' ?>">Tambah Admin</a></li>
                     <li class="list-group-item"><a class="nav-link" href="<?= BASE_URL . '/connect/logout.php' ?>">Logout</a></li>
                 </ul>
             </div>

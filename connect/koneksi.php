@@ -1,6 +1,6 @@
 <?php
 $hostname = "localhost"; // host
-$database = "travel"; // database
+$database = "travel-project"; // database
 $username = "root"; // username db
 $password = ""; // password db
 
